@@ -22,7 +22,7 @@ export default async function PartList({
             <PartItem
               key={item.cid}
               data={item}
-              aid={string2Number(aid)}
+              aid={string2Number(aid)!}
               bvid={bvid}
             />
           );

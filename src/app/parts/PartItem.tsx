@@ -13,8 +13,8 @@ export function PartItem({
   bvid,
 }: {
   data: VideoDetailPage;
-  aid?: number;
-  bvid?: string;
+  aid: number;
+  bvid: string;
 }) {
   const player = usePlayerStore();
   return (

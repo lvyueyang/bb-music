@@ -25,7 +25,6 @@ export interface SearchResultItem {
   arcurl: string;
   aid: number;
   bvid: string;
-  aid: string;
   title: string;
   description: string;
   arcrank: string;
