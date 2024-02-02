@@ -1,8 +1,7 @@
 import { CacheStorage } from '@/utils';
 import { MusicItem, createAudio, musicItem2Url } from '.';
-import { PlayerMode, PlayerModeMap, PlayerStatus } from './constants';
+import { PlayerMode, PlayerStatus } from './constants';
 import { create } from 'zustand';
-import { Play } from '@icon-park/react';
 
 const cacheStore = new CacheStorage<
   Pick<PlayerStoreState, 'current' | 'playerList' | 'playerMode'>
