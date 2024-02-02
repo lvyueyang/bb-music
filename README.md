@@ -1,36 +1,34 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 基于 B 站 API 作为歌曲源开发的音乐播放器
 
-## Getting Started
+## 实现思路
 
-First, run the development server:
+1. B 站上有很多的音乐视频，相当于一种超级全的音乐聚合曲库（索尼直接将 B 站当做网盘，传了 15w 个视频）
+2. 对这些视频进行收集制作成歌单
+3. 无需登录即可完整播放，并且没有广告
+4. 使用 [SocialSisterYi](https://github.com/SocialSisterYi/bilibili-API-collect) 整理的 B 站接口文档，直接就可以获取和搜索 B 站视频数据
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 功能
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- [x] 播放器
+  - [x] 基础功能
+  - [x] 播放列表
+  - [x] 单曲循环,列表循环,随机播放
+  - [] 计时播放
+  - [] 进度拖动
+- [x] 搜索
+  - [x] 视频名称关键字搜索
+  - [] 按 UP 主搜索
+  - [] 按 B 站 URL 搜索
+- [] 歌单
+- [] 歌单同步
+- [] 歌单广场（由用户贡献分享自己的歌单）
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 技术栈
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+1. Next.js 作为全栈脚手架
+2. React
+3. zustand 状态管理
 
-## Learn More
+## 鸣谢致敬
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+1. [SocialSisterYi](https://github.com/SocialSisterYi/bilibili-API-collect) 感谢这个库的作者和相关贡献者
