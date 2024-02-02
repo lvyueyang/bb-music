@@ -77,7 +77,7 @@ export const playerStore = create<PlayerStore>()((set, get) => {
           playerList,
           playerMode: cacheState?.playerMode ?? PlayerMode.ListLoop,
           current,
-          playerHistory: [current.id].filter((f) => !!f),
+          playerHistory: [current?.id].filter((f) => !!f),
         });
       }
     },
